@@ -34,3 +34,9 @@ latex/
 # build
 src/simdjson
 .vscode/
+#---
+*.tlog
+*.ipch
+*.obj
+*.pdb
+*.db

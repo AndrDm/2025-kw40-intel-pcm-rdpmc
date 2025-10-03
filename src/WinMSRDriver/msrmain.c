@@ -44,6 +44,40 @@ DRIVER_UNLOAD MSRUnload;
 #endif
 
 
+//------------------------------------------------------------------------------
+// My Functions  starts here
+
+VOID SetCR4PCE()
+{
+    ULONG_PTR cr4 = __readcr4();
+    DbgPrint("PCE CR4 before setting PCE: %p\n", (PVOID)cr4);
+    cr4 |= (1 << 8); // Set bit 8 (PCE)
+    __writecr4(cr4);
+    cr4 = __readcr4();
+    DbgPrint("PCE CR4 after setting PCE: %p\n", (PVOID)cr4);
+}
+
+VOID SetCR4PCEOnAllCores()
+{
+    for (ULONG i = 0; i < KeQueryActiveProcessorCount(NULL); ++i) {
+        GROUP_AFFINITY affinity = { 0 };
+        affinity.Mask = (KAFFINITY)1 << i;
+        affinity.Group = 0;
+
+        GROUP_AFFINITY oldAffinity;
+        KeSetSystemGroupAffinityThread(&affinity, &oldAffinity);
+
+        SetCR4PCE();
+        DbgPrint("PCE CR4 set for cpu %d\n", i);
+        KeRevertToUserGroupAffinityThread(&oldAffinity);
+    }
+}
+
+//------------------------------------------------------------------------------
+
+
+
+
 NTSTATUS
 DriverEntry(
     __in PDRIVER_OBJECT DriverObject,
@@ -105,6 +139,10 @@ DriverEntry(
     pExt->counterSetHandle = NULL;
 
     IoCreateSymbolicLink(&dosDeviceName, &UnicodeString);
+
+    DbgPrint("Driver loaded\n");
+    SetCR4PCEOnAllCores();
+    DbgPrint("CR4 PCE has been set\n");
 
     return status;
 }

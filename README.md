@@ -53,7 +53,47 @@ Put everything in same folder and run as admin, it works
    6    0     0.31   1.32    3.40    2867 K     14 M    0.80    0.49  0.0020  0.0103     32
    7    0     0.31   1.47    3.40    2605 K     12 M    0.80    0.58  0.0017  0.0082     33
 
+### RDPMC
 
+Two functions added into msrmain.c
+
+```c
+VOID SetCR4PCE()
+{
+    ULONG_PTR cr4 = __readcr4();
+    DbgPrint("PCE CR4 before setting PCE: %p\n", (PVOID)cr4);
+    cr4 |= (1 << 8); // Set bit 8 (PCE)
+    __writecr4(cr4);
+    cr4 = __readcr4();
+    DbgPrint("PCE CR4 after setting PCE: %p\n", (PVOID)cr4);
+}
+
+VOID SetCR4PCEOnAllCores()
+{
+    for (ULONG i = 0; i < KeQueryActiveProcessorCount(NULL); ++i) {
+        GROUP_AFFINITY affinity = { 0 };
+        affinity.Mask = (KAFFINITY)1 << i;
+        affinity.Group = 0;
+
+        GROUP_AFFINITY oldAffinity;
+        KeSetSystemGroupAffinityThread(&affinity, &oldAffinity);
+
+        SetCR4PCE();
+        DbgPrint("PCE CR4 set for cpu %d\n", i);
+        KeRevertToUserGroupAffinityThread(&oldAffinity);
+    }
+}
+```
+
+And into DriverEntry
+
+```c
+    DbgPrint("Driver loaded\n");
+    SetCR4PCEOnAllCores();
+    DbgPrint("CR4 PCE has been set\n");
+```
+
+Then rebuid driver again
 
 --------------------------------------------------------------------------------
 Intel&reg; Performance Counter Monitor (Intel&reg; PCM)
