@@ -8,29 +8,29 @@
 *.XML
 *.htm
 *.html
-*.dll
+# *.dll
 *.patch
 *.orig
 *.out
 *.log
-*.sys
+# *.sys
 *.vxd
-*.exe
+# *.exe
 *.tgz
 .metadata/
-*.sdf
-*.suo
+# *.sdf
+# *.suo
 Debug
-Release
+# Release
 Debug64
-Release64
+# Release64
 .metadata/
 html/
 latex/
 *.swp
 *.vcxproj.user
-.vs/
+# .vs/
 .idea/
-build
+# build
 src/simdjson
 .vscode/

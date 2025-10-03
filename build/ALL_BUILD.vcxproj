@@ -1,0 +1,253 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ResolveNugetPackages>false</ResolveNugetPackages>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{9F98AEA9-200E-3896-BFB3-1338297BCABD}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.26100.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Andrey\Desktop\2025-kw40-intel-pcm-rdpmc\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/Andrey/Desktop/2025-kw40-intel-pcm-rdpmc/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Andrey/Desktop/2025-kw40-intel-pcm-rdpmc -BC:/Users/Andrey/Desktop/2025-kw40-intel-pcm-rdpmc/build --check-stamp-file C:/Users/Andrey/Desktop/2025-kw40-intel-pcm-rdpmc/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Internal\CMakeCLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Internal\CMakeCXXLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Internal\CMakeCommonLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Linker\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Linker\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Linker\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Linker\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Linker\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\WindowsPaths.cmake;C:\Users\Andrey\Desktop\2025-kw40-intel-pcm-rdpmc\build\CMakeFiles\4.1.2\CMakeCCompiler.cmake;C:\Users\Andrey\Desktop\2025-kw40-intel-pcm-rdpmc\build\CMakeFiles\4.1.2\CMakeCXXCompiler.cmake;C:\Users\Andrey\Desktop\2025-kw40-intel-pcm-rdpmc\build\CMakeFiles\4.1.2\CMakeRCCompiler.cmake;C:\Users\Andrey\Desktop\2025-kw40-intel-pcm-rdpmc\build\CMakeFiles\4.1.2\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Andrey\Desktop\2025-kw40-intel-pcm-rdpmc\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/Andrey/Desktop/2025-kw40-intel-pcm-rdpmc/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Andrey/Desktop/2025-kw40-intel-pcm-rdpmc -BC:/Users/Andrey/Desktop/2025-kw40-intel-pcm-rdpmc/build --check-stamp-file C:/Users/Andrey/Desktop/2025-kw40-intel-pcm-rdpmc/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Internal\CMakeCLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Internal\CMakeCXXLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Internal\CMakeCommonLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Linker\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Linker\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Linker\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Linker\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Linker\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\WindowsPaths.cmake;C:\Users\Andrey\Desktop\2025-kw40-intel-pcm-rdpmc\build\CMakeFiles\4.1.2\CMakeCCompiler.cmake;C:\Users\Andrey\Desktop\2025-kw40-intel-pcm-rdpmc\build\CMakeFiles\4.1.2\CMakeCXXCompiler.cmake;C:\Users\Andrey\Desktop\2025-kw40-intel-pcm-rdpmc\build\CMakeFiles\4.1.2\CMakeRCCompiler.cmake;C:\Users\Andrey\Desktop\2025-kw40-intel-pcm-rdpmc\build\CMakeFiles\4.1.2\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Andrey\Desktop\2025-kw40-intel-pcm-rdpmc\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/Andrey/Desktop/2025-kw40-intel-pcm-rdpmc/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Andrey/Desktop/2025-kw40-intel-pcm-rdpmc -BC:/Users/Andrey/Desktop/2025-kw40-intel-pcm-rdpmc/build --check-stamp-file C:/Users/Andrey/Desktop/2025-kw40-intel-pcm-rdpmc/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Internal\CMakeCLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Internal\CMakeCXXLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Internal\CMakeCommonLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Linker\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Linker\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Linker\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Linker\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Linker\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\WindowsPaths.cmake;C:\Users\Andrey\Desktop\2025-kw40-intel-pcm-rdpmc\build\CMakeFiles\4.1.2\CMakeCCompiler.cmake;C:\Users\Andrey\Desktop\2025-kw40-intel-pcm-rdpmc\build\CMakeFiles\4.1.2\CMakeCXXCompiler.cmake;C:\Users\Andrey\Desktop\2025-kw40-intel-pcm-rdpmc\build\CMakeFiles\4.1.2\CMakeRCCompiler.cmake;C:\Users\Andrey\Desktop\2025-kw40-intel-pcm-rdpmc\build\CMakeFiles\4.1.2\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\Andrey\Desktop\2025-kw40-intel-pcm-rdpmc\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/Andrey/Desktop/2025-kw40-intel-pcm-rdpmc/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Andrey/Desktop/2025-kw40-intel-pcm-rdpmc -BC:/Users/Andrey/Desktop/2025-kw40-intel-pcm-rdpmc/build --check-stamp-file C:/Users/Andrey/Desktop/2025-kw40-intel-pcm-rdpmc/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\GNUInstallDirs.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Internal\CMakeCLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Internal\CMakeCXXLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Internal\CMakeCommonLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Linker\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Linker\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Linker\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Linker\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Linker\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-4.1\Modules\Platform\WindowsPaths.cmake;C:\Users\Andrey\Desktop\2025-kw40-intel-pcm-rdpmc\build\CMakeFiles\4.1.2\CMakeCCompiler.cmake;C:\Users\Andrey\Desktop\2025-kw40-intel-pcm-rdpmc\build\CMakeFiles\4.1.2\CMakeCXXCompiler.cmake;C:\Users\Andrey\Desktop\2025-kw40-intel-pcm-rdpmc\build\CMakeFiles\4.1.2\CMakeRCCompiler.cmake;C:\Users\Andrey\Desktop\2025-kw40-intel-pcm-rdpmc\build\CMakeFiles\4.1.2\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\Andrey\Desktop\2025-kw40-intel-pcm-rdpmc\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\Andrey\Desktop\2025-kw40-intel-pcm-rdpmc\build\ZERO_CHECK.vcxproj">
+      <Project>{14231E9E-8EC6-37F3-BB3E-7948CCC841C6}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Andrey\Desktop\2025-kw40-intel-pcm-rdpmc\build\src\PCM_STATIC.vcxproj">
+      <Project>{60C81679-2643-37C6-9247-0F7186D3EF25}</Project>
+      <Name>PCM_STATIC</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Andrey\Desktop\2025-kw40-intel-pcm-rdpmc\build\src\pcm.vcxproj">
+      <Project>{E01FE5A3-DA50-3058-A541-6F91EB0CB4FA}</Project>
+      <Name>pcm</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Andrey\Desktop\2025-kw40-intel-pcm-rdpmc\build\src\pcm-accel.vcxproj">
+      <Project>{313CAA84-27B2-3373-AF74-6D7F6209D3B4}</Project>
+      <Name>pcm-accel</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Andrey\Desktop\2025-kw40-intel-pcm-rdpmc\build\src\pcm-core.vcxproj">
+      <Project>{18890F6A-E692-3989-B89C-8E42F0EDE875}</Project>
+      <Name>pcm-core</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Andrey\Desktop\2025-kw40-intel-pcm-rdpmc\build\src\pcm-iio.vcxproj">
+      <Project>{5160FC43-F2C9-3359-B495-580170AB71A2}</Project>
+      <Name>pcm-iio</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Andrey\Desktop\2025-kw40-intel-pcm-rdpmc\build\src\pcm-latency.vcxproj">
+      <Project>{0EB04800-95C0-3FB4-9CEF-94A493642A55}</Project>
+      <Name>pcm-latency</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Andrey\Desktop\2025-kw40-intel-pcm-rdpmc\build\src\pcm-lib.vcxproj">
+      <Project>{DF3E44F9-59EB-3ABC-99E9-2D9B063A2825}</Project>
+      <Name>pcm-lib</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Andrey\Desktop\2025-kw40-intel-pcm-rdpmc\build\src\pcm-memory.vcxproj">
+      <Project>{8C485D6C-8B4A-3319-8E56-0B7FAD778200}</Project>
+      <Name>pcm-memory</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Andrey\Desktop\2025-kw40-intel-pcm-rdpmc\build\src\pcm-mmio.vcxproj">
+      <Project>{97894487-C9DE-32EE-9047-85C801917B78}</Project>
+      <Name>pcm-mmio</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Andrey\Desktop\2025-kw40-intel-pcm-rdpmc\build\src\pcm-msr.vcxproj">
+      <Project>{B3560B83-0BF9-3E26-A22D-CECD0883A799}</Project>
+      <Name>pcm-msr</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Andrey\Desktop\2025-kw40-intel-pcm-rdpmc\build\src\pcm-numa.vcxproj">
+      <Project>{788B98DE-09EB-3A36-BE17-C842E56C8E1A}</Project>
+      <Name>pcm-numa</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Andrey\Desktop\2025-kw40-intel-pcm-rdpmc\build\src\pcm-pcicfg.vcxproj">
+      <Project>{DA99FBA4-B72F-34E3-BE7B-FEE4447CCD09}</Project>
+      <Name>pcm-pcicfg</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Andrey\Desktop\2025-kw40-intel-pcm-rdpmc\build\src\pcm-pcie.vcxproj">
+      <Project>{2312589D-317E-390B-A301-8E3C911F3D0A}</Project>
+      <Name>pcm-pcie</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Andrey\Desktop\2025-kw40-intel-pcm-rdpmc\build\src\pcm-power.vcxproj">
+      <Project>{2F7E3CEB-7EDA-351A-961C-4307B5C3E6F4}</Project>
+      <Name>pcm-power</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Andrey\Desktop\2025-kw40-intel-pcm-rdpmc\build\src\pcm-raw.vcxproj">
+      <Project>{E2E14C7D-00AD-3D1A-9C64-A8230B7A87B9}</Project>
+      <Name>pcm-raw</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Andrey\Desktop\2025-kw40-intel-pcm-rdpmc\build\src\pcm-service.vcxproj">
+      <Project>{27395BB8-43F7-3575-AFD9-BFB2BF5D31FE}</Project>
+      <Name>pcm-service</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Andrey\Desktop\2025-kw40-intel-pcm-rdpmc\build\src\pcm-tpmi.vcxproj">
+      <Project>{38239034-4978-30A5-9C54-40CB37B67D6A}</Project>
+      <Name>pcm-tpmi</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\Andrey\Desktop\2025-kw40-intel-pcm-rdpmc\build\src\pcm-tsx.vcxproj">
+      <Project>{8CC6437C-E3E8-3A07-A4A8-FD7A16D06CA0}</Project>
+      <Name>pcm-tsx</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

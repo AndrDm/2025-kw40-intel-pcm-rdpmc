@@ -1,0 +1,10 @@
+{
+	"InstallScripts" : 
+	[
+		"C:/Users/Andrey/Desktop/2025-kw40-intel-pcm-rdpmc/build/cmake_install.cmake",
+		"C:/Users/Andrey/Desktop/2025-kw40-intel-pcm-rdpmc/build/src/cmake_install.cmake",
+		"C:/Users/Andrey/Desktop/2025-kw40-intel-pcm-rdpmc/build/examples/cmake_install.cmake",
+		"C:/Users/Andrey/Desktop/2025-kw40-intel-pcm-rdpmc/build/tests/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

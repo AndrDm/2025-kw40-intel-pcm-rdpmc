@@ -2,6 +2,57 @@ This is my experimental **fork** of the Intel&reg; Performance Counter Monitor (
 
 The purpose is to add RDPMC to user apps by setting appropriate bit in MSR.sys driver.
 
+### Build
+
+Using CMake 4.1.2 and Visual Studio 2022 v.17.14.16
+
+![image-20251003080230016](assets/image-20251003080230016.png)
+
+Configured:
+
+![image-20251003080333686](assets/image-20251003080333686.png)
+
+Rebuild PCM.sln from \build - without errors:
+
+```
+20>------ Rebuild All started: Project: ALL_BUILD, Configuration: Release x64 ------
+20>Building Custom Rule C:/Users/Andrey/Desktop/2025-kw40-intel-pcm-rdpmc/CMakeLists.txt
+========== Rebuild All: 20 succeeded, 0 failed, 0 skipped ==========
+========== Rebuild completed at 08:10 and took 01:35,402 minutes ==========
+```
+
+Step 2 - build MSR.sys driver from \src\WinMSRDriver\MSR.vcxproj 
+
+Also OK
+
+```
+Rebuild started at 08:12...
+1>------ Rebuild All started: Project: MSR, Configuration: Release x64 ------
+1>Building 'MSR' with toolset 'WindowsKernelModeDriver10.0' and the 'Universal' target platform.
+1>msrmain.c
+1>MSR.vcxproj -> C:\Users\Andrey\Desktop\2025-kw40-intel-pcm-rdpmc\src\WinMSRDriver\x64\Release\MSR.sys
+1>Done Adding Additional Store
+1>Successfully signed: C:\Users\Andrey\Desktop\2025-kw40-intel-pcm-rdpmc\src\WinMSRDriver\x64\Release\MSR.sys
+1>
+1>Driver is 'Universal'.
+1>Inf2Cat task was skipped as there were no inf files to process
+========== Rebuild All: 1 succeeded, 0 failed, 0 skipped ==========
+========== Rebuild completed at 08:12 and took 04,347 seconds ==========
+```
+
+Put everything in same folder and run as admin, it works
+
+ Core (SKT) | UTIL | IPC  | CFREQ | L3MISS | L2MISS | L3HIT | L2HIT | L3MPI | L2MPI |  TEMP
+
+   0    0     0.32   1.23    3.40    2247 K     14 M    0.85    0.50  0.0016  0.0108     35
+   1    0     0.25   1.49    3.40    1301 K     10 M    0.88    0.61  0.0010  0.0084     35
+   2    0     0.28   1.14    3.40    2284 K     14 M    0.84    0.51  0.0021  0.0134     33
+   3    0     0.29   1.16    3.40    2610 K     12 M    0.80    0.51  0.0023  0.0113     33
+   4    0     0.37   1.74    3.40    2401 K     15 M    0.84    0.49  0.0011  0.0069     25
+   5    0     0.29   1.53    3.40    2432 K     11 M    0.79    0.46  0.0016  0.0075     25
+   6    0     0.31   1.32    3.40    2867 K     14 M    0.80    0.49  0.0020  0.0103     32
+   7    0     0.31   1.47    3.40    2605 K     12 M    0.80    0.58  0.0017  0.0082     33
+
 
 
 --------------------------------------------------------------------------------

@@ -1,0 +1,6 @@
+# CMake generation dependency list for this directory.
+C:/Program Files/CMake/share/cmake-4.1/Modules/FindOpenSSL.cmake
+C:/Program Files/CMake/share/cmake-4.1/Modules/FindPackageHandleStandardArgs.cmake
+C:/Program Files/CMake/share/cmake-4.1/Modules/FindPackageMessage.cmake
+C:/Program Files/CMake/share/cmake-4.1/Modules/SelectLibraryConfigurations.cmake
+C:/Users/Andrey/Desktop/2025-kw40-intel-pcm-rdpmc/src/CMakeLists.txt

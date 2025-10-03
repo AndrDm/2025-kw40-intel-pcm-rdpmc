@@ -1,0 +1,1 @@
+C:\Users\Andrey\Desktop\2025-kw40-intel-pcm-rdpmc\build\src\pcm-service.dir\Release\pcm-service.vcxproj.AssemblyReference.cache

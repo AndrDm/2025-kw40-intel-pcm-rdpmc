@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\Andrey\Desktop\2025-kw40-intel-pcm-rdpmc\src\bw.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Andrey\Desktop\2025-kw40-intel-pcm-rdpmc\src\cpucounters.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Andrey\Desktop\2025-kw40-intel-pcm-rdpmc\src\debug.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Andrey\Desktop\2025-kw40-intel-pcm-rdpmc\src\lspci.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Andrey\Desktop\2025-kw40-intel-pcm-rdpmc\src\mmio.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Andrey\Desktop\2025-kw40-intel-pcm-rdpmc\src\msr.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Andrey\Desktop\2025-kw40-intel-pcm-rdpmc\src\pci.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Andrey\Desktop\2025-kw40-intel-pcm-rdpmc\src\pcm-accel-common.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Andrey\Desktop\2025-kw40-intel-pcm-rdpmc\src\pcm-iio-pmu.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Andrey\Desktop\2025-kw40-intel-pcm-rdpmc\src\pmt.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Andrey\Desktop\2025-kw40-intel-pcm-rdpmc\src\threadpool.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Andrey\Desktop\2025-kw40-intel-pcm-rdpmc\src\topology.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Andrey\Desktop\2025-kw40-intel-pcm-rdpmc\src\tpmi.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Andrey\Desktop\2025-kw40-intel-pcm-rdpmc\src\uncore_pmu_discovery.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Andrey\Desktop\2025-kw40-intel-pcm-rdpmc\src\utils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Andrey\Desktop\2025-kw40-intel-pcm-rdpmc\src\winpmem\winpmem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Andrey\Desktop\2025-kw40-intel-pcm-rdpmc\src\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4D0C37C7-C90B-3A43-95FF-C9FA88182B29}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
